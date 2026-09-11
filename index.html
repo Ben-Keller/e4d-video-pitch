@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Through Concrete</title>
+<meta name="description" content="Storyboard pitch and voiceover script for a 2-minute projection-mapped film on UNDP's Sustainable Energy for Development offer, narrated by Riad Meddeb.">
+<meta property="og:title" content="Light Through Concrete">
+<meta property="og:description" content="Film treatment and storyboard pitch — UNDP Sustainable Energy Hub.">
+<meta property="og:image" content="frames/06_wall.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230F1012'/%3E%3Crect x='3' y='7' width='10' height='2' fill='%23F2B24A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+:root{
+  --ink:#EDE8DF; --ink-2:#B9B4AA; --ink-3:#7E7A72;
+  --ground:#0F1012; --ground-2:#17181B; --ground-3:#202226; --line:#2C2E33;
+  --amber:#F2B24A; --teal:#38C7BC; --blue:#3C8DDE;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;padding-inline:clamp(16px,4vw,56px);padding-block:0 96px}
+a{color:var(--amber)}
+h1,h2,h3{font-family:var(--display);font-stretch:80%;text-wrap:balance;margin:0}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.wrap{max-width:1280px;margin:0 auto}
+
+/* scene strip nav */
+nav{position:sticky;top:0;z-index:5;background:linear-gradient(var(--ground) 70%,transparent);padding-block:14px 22px;margin-inline:calc(-1*clamp(16px,4vw,56px));padding-inline:clamp(16px,4vw,56px)}
+nav .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none}
+nav a{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:6px 10px;border:1px solid var(--line);border-radius:2px;white-space:nowrap;background:var(--ground-2)}
+nav a:hover,nav a:focus-visible{color:var(--ink);border-color:var(--ink-3);outline:none}
+nav a.sc{color:var(--amber);border-color:#4a3a1c}
+
+/* title */
+.title{padding-block:56px 40px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.title h1{font-size:clamp(52px,8vw,124px);font-weight:800;line-height:.92;letter-spacing:-.01em;text-transform:uppercase}
+.title h1 em{font-style:normal;color:var(--amber)}
+.title p{font-size:18px;color:var(--ink-2);max-width:52ch;margin:0}
+.title .meta{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-family:var(--mono);font-size:13px}
+.title .meta dt{color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;font-size:11.5px;padding-top:2px}
+.title .meta dd{margin:0;color:var(--ink)}
+.strip{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;margin-top:40px}
+.strip img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:saturate(.9)}
+
+/* sections */
+section{padding-block:64px 24px;border-bottom:1px solid var(--line)}
+.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.eyebrow .n{font-family:var(--display);font-stretch:80%;font-weight:800;font-size:44px;color:var(--amber);line-height:1}
+.eyebrow .t{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.eyebrow .t b{color:var(--ink);font-weight:500}
+h2{font-size:clamp(30px,4vw,54px);font-weight:700;line-height:1.02;margin-bottom:22px;letter-spacing:-.005em}
+h3{font-size:14px;font-family:var(--mono);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.prose{max-width:66ch;color:var(--ink-2)}
+.prose p{margin:0 0 14px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:18px}
+.cols>div p{margin:0;color:var(--ink-2);font-size:15.5px}
+
+/* scene slide */
+.scene .frame{position:relative;background:#000;border:1px solid var(--line)}
+.scene .frame img{width:100%;display:block;aspect-ratio:16/9}
+.scene .frame .slate{position:absolute;left:14px;top:14px;display:flex;gap:8px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border-radius:2px;background:rgba(15,16,18,.82);color:var(--ink-2);border:1px solid rgba(255,255,255,.08)}
+.tag.live{color:#ff8f7a;border-color:rgba(255,143,122,.35)}
+.tag.studio{color:var(--teal);border-color:rgba(56,199,188,.35)}
+.tag.time{color:var(--ink)}
+.scene .body{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;margin-top:26px}
+.vo{border-left:2px solid var(--amber);padding-left:20px}
+.vo p{font-size:21px;line-height:1.5;margin:0 0 10px;color:var(--ink)}
+.vo p .who{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:4px}
+.vo p .who.live{color:#ff8f7a}.vo p .who.studio{color:var(--teal)}
+.vo .dir{font-style:italic;color:var(--ink-3);font-size:15px}
+.notes{display:grid;gap:16px}
+.notes div p{margin:0;color:var(--ink-2);font-size:15.5px}
+.notes .dv{background:var(--ground-2);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.notes .dv h3{color:var(--teal)}
+details{margin-top:22px;border-top:1px dashed var(--line);padding-top:12px}
+summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+summary:hover{color:var(--ink)}
+details pre{white-space:pre-wrap;font-family:var(--mono);font-size:13px;line-height:1.55;color:var(--ink-2);background:var(--ground-2);padding:14px 16px;border-radius:3px;margin:10px 0 0;border:1px solid var(--line)}
+
+/* script table */
+.script{display:grid;grid-template-columns:auto auto 1fr;gap:0;border-top:1px solid var(--line);margin-top:8px}
+.script>div{padding:14px 18px 14px 0;border-bottom:1px solid var(--line)}
+.script .tc{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-right:22px}
+.script .src{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding-right:22px;padding-top:17px}
+.script .src.live{color:#ff8f7a}.script .src.studio{color:var(--teal)}
+.script .ln{font-size:18px;color:var(--ink)}
+.script .ln i{color:var(--ink-3);font-size:14px;display:block;margin-top:2px}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);margin-top:12px}
+
+/* data table */
+table{border-collapse:collapse;width:100%;font-size:15px}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:8px 12px 8px 0;border-bottom:1px solid var(--line);font-weight:500}
+td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+td b{color:var(--ink);font-family:var(--display);font-stretch:85%;font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+
+/* timeline bar */
+.tl{display:flex;height:34px;gap:2px;margin:18px 0 6px}
+.tl div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:#0f1012;border-radius:2px}
+.tl .l{background:#e2a0a0}.tl .s{background:var(--teal)}
+.tl .m{background:linear-gradient(90deg,#e2a0a0,var(--teal))}
+.legend{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);letter-spacing:.06em}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:1px;margin:0 6px 0 14px;vertical-align:-1px}
+
+@media (max-width:860px){
+  .title{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr}
+  .scene .body{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(4,1fr)}
+  .script{grid-template-columns:auto 1fr}
+  .script .src{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .scene .frame img{transition:transform .6s ease}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a href="#concept">Concept</a><a href="#script">Script</a>
+<a class="sc" href="#s1">1 Threshold</a><a class="sc" href="#s2">2 Doorway</a><a class="sc" href="#s3">3 Corridor</a><a class="sc" href="#s4">4 Pillars</a><a class="sc" href="#s5">5 Workshop</a><a class="sc" href="#s6">6 The Wall</a><a class="sc" href="#s7">7 The Offer</a><a class="sc" href="#s8">8 Convergence</a>
+<a href="#data">Wall data</a><a href="#production">Production</a>
+</div></nav>
+
+<div class="wrap">
+<header class="title">
+  <div>
+    <p class="mono" style="margin-bottom:18px">Film treatment &amp; storyboard pitch · UNDP Sustainable Energy Hub</p>
+    <h1>Light<br>through<br><em>concrete</em></h1>
+  </div>
+  <div>
+    <p>A ~2-minute walk-through film. Riad Meddeb moves through a dark concrete building; projections appear on its architecture and turn the Sustainable Energy for Development narrative into rooms you can walk into. His voice carries the story — recorded live in the space where he speaks to camera, finished in the studio where the walls speak for him.</p>
+    <dl class="meta" style="margin-top:22px">
+      <dt>Runtime</dt><dd>2:00 (8 scenes)</dd>
+      <dt>Narrator</dt><dd>Riad Meddeb, on location + studio VO</dd>
+      <dt>Format</dt><dd>2.39:1, single continuous passage, projection-mapped</dd>
+      <dt>Palette</dt><dd>Concrete grey · projection amber · data teal</dd>
+    </dl>
+  </div>
+</header>
+<div class="strip">
+  <img src="frames/01_threshold.jpg" alt=""><img src="frames/02_doorway.jpg" alt=""><img src="frames/03_corridor.jpg" alt=""><img src="frames/04_pillars.jpg" alt="">
+  <img src="frames/05_workshop.jpg" alt=""><img src="frames/06_wall.jpg" alt=""><img src="frames/07_offer.jpg" alt=""><img src="frames/08_convergence.jpg" alt="">
+</div>
+
+<section id="concept">
+  <div class="eyebrow"><span class="t">Concept</span></div>
+  <h2>The building is the argument. Riad's passage through it is the sentence.</h2>
+  <div class="prose">
+    <p>Development without energy is a building with the lights off. So we start there: bare concrete, no colour, one man walking. As he moves, the walls begin to show what reliable energy makes possible — first small (a doorway), then moving (a corridor), then monumental (a whole wall). The projections escalate in scale exactly as the narrative escalates from a single household to a continent-wide system, and the final room brings every scene together around him.</p>
+    <p>Three rules keep it honest. Every projection is anchored to real architecture — door frames, pillars, corners — so the image reads as light on concrete, never as a green-screen. Figures are never left as figures: a number fills a wall, then dissolves into the people it counts. And the camera never cuts away from Riad's walk; the film is one continuous passage, with each scene revealed by turning a corner, so the audience discovers the story at the same pace he does.</p>
+  </div>
+  <div class="cols">
+    <div><h3>Voice — two registers</h3><p><span style="color:#ff8f7a">Live</span> lines are recorded on location with the room's own acoustics: Riad at a doorway, turning a corner, speaking to camera. <span style="color:var(--teal)">Studio</span> lines are the close, intimate voice that carries the data sequences while the walls do the talking. The film moves between the two so the argument feels both witnessed and considered.</p></div>
+    <div><h3>Projection — three scales</h3><p>Intimate (a doorway, a single scene at human size), moving (a landscape that travels along a corridor at walking pace), and vast (one image filling an entire wall). The escalation is the visual structure of the film.</p></div>
+    <div><h3>Data — living, not decorative</h3><p>Four data moments are animated into the projections: a counter along the corridor, a wall-sized figure dissolving into people, a map of Africa lighting up node by node, and the offer's three pillars with a finance mix that shifts as Riad speaks. Every number comes from the 2026 SDG7 tracking report or UNDP's own portfolio.</p></div>
+  </div>
+</section>
+
+<section id="script">
+  <div class="eyebrow"><span class="t">Narration script · <b>~255 words · 2:00</b></span></div>
+  <h2>Full voiceover, by timecode</h2>
+  <div class="tl">
+    <div class="l" style="flex:10">1</div><div class="l" style="flex:15">2</div><div class="s" style="flex:15">3</div><div class="s" style="flex:12">4</div><div class="l" style="flex:13">5</div><div class="s" style="flex:17">6</div><div class="l" style="flex:23">7</div><div class="m" style="flex:15">8</div>
+  </div>
+  <div class="legend">0:00 → 2:00 <i style="background:#e2a0a0"></i>Live on location <i style="background:var(--teal)"></i>Studio VO</div>
+  <div class="script">
+    <div class="tc">0:00</div><div class="src live">Live</div><div class="ln">Before we talk about energy — look at what's missing when it isn't there.<i>Footsteps on concrete. No music yet.</i></div>
+    <div class="tc">0:10</div><div class="src live">Live</div><div class="ln">A clinic that closes at sunset. Homework by kerosene. A vaccine fridge that can't hold cold. This is what the absence of energy looks like. It looks like a life on pause.</div>
+    <div class="tc">0:25</div><div class="src studio">Studio</div><div class="ln">Six hundred and fifty-five million people still live without electricity. Two billion cook with fuels that harm them. Most of them in sub-Saharan Africa — and the gap is not closing fast enough.</div>
+    <div class="tc">0:40</div><div class="src studio">Studio</div><div class="ln">But a number is not a person. Behind every figure is someone waiting — for a pump, a fridge, a phone signal, a light to work by.</div>
+    <div class="tc">0:52</div><div class="src live">Live</div><div class="ln">And this is what happens when the power arrives. It doesn't just switch on a light. It switches on an economy.<i>Workshop sound arrives before the picture.</i></div>
+    <div class="tc">1:05</div><div class="src studio">Studio</div><div class="ln">To reach everyone by 2030, the pace of electrification has to triple. That will not happen one project at a time. It takes systems — policy, finance and markets that work together.</div>
+    <div class="tc">1:22</div><div class="src live">Live</div><div class="ln">That is UNDP's Sustainable Energy for Development offer. We work with governments to make their energy plans investable. We de-risk finance, so capital moves to where it is needed. And we connect energy to what it is for: health, learning, jobs, food — and a stable climate.<i>To camera.</i></div>
+    <div class="tc">1:45</div><div class="src live">Live → Studio</div><div class="ln">Energy is not the goal. It is the means. Reliable, sustainable, affordable energy — so development can get on with everything else.<i>Beat. Studio voice, over the end card:</i> This is energy for development. Let's finish the job.</div>
+  </div>
+  <p class="count">Paced at ~130 words per minute with room for ambient sound. Optional cut for a 90-second version: drop scene 4 and shorten scene 7 to its first two sentences.</p>
+</section>
+
+<!-- SCENES -->
+<section class="scene" id="s1">
+  <div class="eyebrow"><span class="n">1</span><span class="t">Threshold · <b>0:00–0:10</b> · Wide, low angle, static then slow push</span></div>
+  <h2>A man walks out of daylight into the dark.</h2>
+  <div class="frame"><img src="frames/01_threshold.jpg" alt="Storyboard frame: Riad walks from a bright entrance into a dark concrete hall; a thin line of light waits on the far wall."><div class="slate"><span class="tag time">SC 1</span><span class="tag live">Live VO</span><span class="tag">Projection: single line</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who live">Live · walking, off-mic distance</span>Before we talk about energy — look at what's missing when it isn't there.</p>
+      <p class="dir">Riad enters frame-left from the flooded entrance, back to camera, and keeps walking. The camera holds, then begins to follow at his pace. Sound: footsteps, the hum of the building, wind at the door.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Wide and low. Riad is small against the pillars; the entrance light blows out behind him and rims his silhouette. The composition is almost empty on purpose — this is the "lights off" state of the building.</p></div>
+      <div><h3>Projection</h3><p>Nothing yet except one thin amber line at eye height on the far wall, like a horizon or a power line. It is the first sign that the building can "wake up". It should be barely noticed on first viewing.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>None. The line is a seed: it will become the corridor ticker in scene 3.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt for a photoreal version</summary><pre>Cinematic wide shot, 2.39:1, low angle. A man in a dark suit walks away from camera out of a blown-out white entrance into a vast dark brutalist concrete hall with square pillars. Only one thin horizontal line of warm amber projected light glows on the far concrete wall. Hard rim light on his silhouette from the doorway, deep shadows, fine film grain, volumetric haze, muted desaturated palette, Roger Deakins lighting, anamorphic lens, 35mm.</pre></details>
+</section>
+
+<section class="scene" id="s2">
+  <div class="eyebrow"><span class="n">2</span><span class="t">Doorway · <b>0:10–0:25</b> · Medium, eye level, profile</span></div>
+  <h2>The intimate scene: a doorway becomes a room.</h2>
+  <div class="frame"><img src="frames/02_doorway.jpg" alt="Storyboard frame: Riad pauses in profile at a doorway inside which a warm projected scene of a mother and child at a table under a single lamp is visible."><div class="slate"><span class="tag time">SC 2</span><span class="tag live">Live VO</span><span class="tag">Projection: intimate</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who live">Live · standing at the threshold, quiet</span>A clinic that closes at sunset. Homework by kerosene. A vaccine fridge that can't hold cold. This is what the absence of energy looks like. It looks like a life on pause.</p>
+      <p class="dir">He stops at the door and watches. The scene inside is silent and slightly slowed. He does not enter; he speaks to us in profile, lit only by the warm spill.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Eye level, medium. Riad fills the left third; the doorway fills the right. Camera is perfectly still — the only movement is inside the door frame. Warm light on his face-side, the rest of the corridor near black.</p></div>
+      <div><h3>Projection</h3><p>A single household scene projected exactly into the door opening, at true human scale: a child doing homework, a mother behind her, one lamp — the only light source. Shot on location (a Solar for Health / home-solar community) so the people are real, not stock. Options for the "clinic at sunset" line: cross-fade to a nurse in a clinic doorway.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>None. Deliberately human. The contrast with scene 3's data is the point.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic medium shot, 2.39:1, eye level. A man in a dark suit stands in profile at the threshold of a tall concrete doorway inside a dark brutalist building. Inside the doorway, projected onto the far wall at life size, a warmly lit scene: a young girl doing homework at a wooden table under a single small solar lamp, her mother standing behind her. The only light in the frame comes from the projection and spills onto the man's face and the concrete floor. Deep black shadows, rich amber and brown tones, fine grain, anamorphic bokeh, documentary realism.</pre></details>
+</section>
+
+<section class="scene" id="s3">
+  <div class="eyebrow"><span class="n">3</span><span class="t">Corridor · <b>0:25–0:40</b> · Tracking, ¾ behind, walking pace</span></div>
+  <h2>The moving landscape: a continent travels with him.</h2>
+  <div class="frame"><img src="frames/03_corridor.jpg" alt="Storyboard frame: Riad walks along a long corridor; a sunrise landscape with a field of solar panels is projected along the wall in perspective, with a counter reading 655,000,000 running above it."><div class="slate"><span class="tag time">SC 3</span><span class="tag studio">Studio VO</span><span class="tag">Projection: moving</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who studio">Studio · close, measured</span>Six hundred and fifty-five million people still live without electricity. Two billion cook with fuels that harm them. Most of them in sub-Saharan Africa — and the gap is not closing fast enough.</p>
+      <p class="dir">Riad walks at a steady pace; the landscape on the wall moves with him so the horizon appears to stay level with his shoulder. Music enters here, low.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Steadicam or dolly tracking from three-quarters behind, keeping Riad in the left-centre and the wall as the right half of the frame, vanishing point far ahead. The corridor's length is the runway for the figure.</p></div>
+      <div><h3>Projection</h3><p>A long-format aerial/drone plate — sunrise over a Sahel landscape, a solar field, a village at the edge of a grid — mapped onto the corridor wall in perspective and scrolled at walking speed. The floor picks up an amber reflection.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>A ticker runs along the top of the projection: a counter climbs to <b style="color:var(--teal)">655,000,000</b> over three seconds, then a second figure, <b style="color:var(--teal)">2,000,000,000</b> without clean cooking, slides in behind it. The digits are slightly ahead of Riad so he is always walking toward them.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic tracking shot from behind, 2.39:1. A man in a dark suit walks down a long dark concrete corridor with a strong one-point perspective. Onto the entire left wall a wide landscape is projected in perspective: sunrise over savannah with a field of solar panels and a distant village, warm orange sky. Above the landscape a thin band of teal digital text reads "655,000,000". The projection light reflects on the concrete floor. Deep contrast, film grain, anamorphic flare, muted teal and amber palette.</pre></details>
+</section>
+
+<section class="scene" id="s4">
+  <div class="eyebrow"><span class="n">4</span><span class="t">Pillars · <b>0:40–0:52</b> · Very wide, low, slow lateral drift</span></div>
+  <h2>A figure fills the wall, then becomes the people it counts.</h2>
+  <div class="frame"><img src="frames/04_pillars.jpg" alt="Storyboard frame: between two dark pillars, the figure 655M fills a concrete wall in teal; its right side dissolves into a field of dots and tiny human figures. Riad stands small at the bottom, back to camera."><div class="slate"><span class="tag time">SC 4</span><span class="tag studio">Studio VO</span><span class="tag">Projection: typographic → particles</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who studio">Studio</span>But a number is not a person. Behind every figure is someone waiting — for a pump, a fridge, a phone signal, a light to work by.</p>
+      <p class="dir">Riad stops and looks up. On "not a person" the digits begin to break apart.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Camera low on the floor, very wide, drifting slowly left to right so the foreground pillars slide across the figure and reveal it in pieces — the number is too large to be seen all at once. Riad is tiny at the bottom, the only vertical in a horizontal composition.</p></div>
+      <div><h3>Projection</h3><p>Wall-sized typography (655M, teal) mapped between two pillars, with the pillars themselves kept dark so the light appears to sit behind them.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>The figure dissolves from right to left into a particle field; particles resolve into tiny walking figures, and then — on "someone waiting" — into a full-bleed photograph of one face. The numbers literally give way to the people they describe, which is the visual thesis of the whole film.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic ultra-wide low-angle shot, 2.39:1. A huge concrete wall between two dark square pillars is covered by a projection of the giant teal number "655M" in bold sans-serif type; the right half of the number is dissolving into thousands of glowing teal and amber particles, some forming tiny human silhouettes. A lone man in a dark suit stands very small at the bottom of the frame with his back to camera, looking up. Dark brutalist interior, teal glow on the floor, deep shadows, film grain.</pre></details>
+</section>
+
+<section class="scene" id="s5">
+  <div class="eyebrow"><span class="n">5</span><span class="t">Workshop · <b>0:52–1:05</b> · Over-the-shoulder corner reveal, handheld</span></div>
+  <h2>You hear the workshop before you see it. Then the machine is the size of the wall.</h2>
+  <div class="frame"><img src="frames/05_workshop.jpg" alt="Storyboard frame: seen over Riad's shoulder as he rounds a dark corner, a monumental projected workshop — a giant flywheel, a lathe, a welder throwing sparks — fills the wall ahead in amber."><div class="slate"><span class="tag time">SC 5</span><span class="tag live">Live VO</span><span class="tag">Projection: monumental</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who live">Live · turning the corner, raised over the noise</span>And this is what happens when the power arrives. It doesn't just switch on a light. It switches on an economy.</p>
+      <p class="dir">Sound design leads: the grind of a lathe and the crack of welding arrive from around the corner a full three seconds before the picture. Riad turns into it; the camera swings with him.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Handheld, over his shoulder, close — the one moment the camera is intimate with Riad's body. The near wall slides off frame-left as he turns and the workshop is revealed in a single move. Scale contrast is everything: the welder projected on the wall is bigger than Riad.</p></div>
+      <div><h3>Projection</h3><p>Footage from an electrified workshop or cooperative — a metal shop, a mill, a cold-storage unit — shot low and slow so the machinery reads as monumental. Real sparks and real motion; heavy amber cast so the corner "glows" before it is turned.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>Minimal: a small caption in the corner of the projection counts productive-use connections (jobs, businesses) — optional, and only if the workshop footage has a matching UNDP programme behind it.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic over-the-shoulder shot, 2.39:1, handheld feel. A man in a dark suit is turning a corner inside a dark concrete building; the near wall is a black silhouette on the left. Ahead, a monumental projection covers the whole wall: a machine workshop at enormous scale — a giant flywheel, a long lathe, a welder throwing bright sparks — all in deep amber and bronze tones. The projected welder is larger than the man. Warm light reflects on the concrete floor. Film grain, anamorphic, high contrast.</pre></details>
+</section>
+
+<section class="scene" id="s6">
+  <div class="eyebrow"><span class="n">6</span><span class="t">The Wall · <b>1:05–1:22</b> · Vast, symmetrical, slow pull-back</span></div>
+  <h2>The vast image: a continent lights up, node by node.</h2>
+  <div class="frame"><img src="frames/06_wall.jpg" alt="Storyboard frame: an entire concrete wall carries a teal map of Africa with amber nodes and network lines, a bar chart showing electrification pace must triple, and a comparison of renewable capacity per person. Riad is a tiny silhouette at the bottom."><div class="slate"><span class="tag time">SC 6</span><span class="tag studio">Studio VO</span><span class="tag">Projection: vast + data</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who studio">Studio</span>To reach everyone by 2030, the pace of electrification has to triple. That will not happen one project at a time. It takes systems — policy, finance and markets that work together.</p>
+      <p class="dir">Riad is still. The camera pulls back slowly until the wall fills the frame edge to edge and he is the smallest thing in it.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Dead-centre symmetry, the only symmetrical shot in the film — the "system" shot. Starts on Riad's back at medium, pulls back on a track to the widest frame of the piece. Teal light on the floor.</p></div>
+      <div><h3>Projection</h3><p>A full-wall data landscape instead of a photograph: the map is the image. Concrete texture is allowed to show through the projection so it still reads as light on a surface.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>Three movements timed to the line. (1) Mini-grid nodes switch on one by one across the map and connect into a network — a ripple at each new node. (2) On "triple", a short bar grows into one three times its length beside a <b style="color:var(--amber)">3×</b>. (3) On "systems", a per-person comparison: <b style="color:var(--teal)">34 W</b> of renewable capacity per person in low-income countries against <b style="color:var(--teal)">1,224 W</b> in high-income countries — the longest bar in the film.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic ultra-wide symmetrical shot, 2.39:1. An enormous dark concrete wall is covered by a projected data visualisation: a glowing teal outline map of Africa with dozens of bright amber nodes connected by thin lines like a power network, plus minimal bar charts and large type in teal and amber on the right. Concrete texture shows through the projection. A lone man in a dark suit stands tiny at the bottom centre with his back to camera. Teal glow on the floor, deep black edges, film grain.</pre></details>
+</section>
+
+<section class="scene" id="s7">
+  <div class="eyebrow"><span class="n">7</span><span class="t">The Offer · <b>1:22–1:45</b> · Medium close-up, to camera, slow push-in</span></div>
+  <h2>Riad turns to us. Behind him, the offer in three columns.</h2>
+  <div class="frame"><img src="frames/07_offer.jpg" alt="Storyboard frame: Riad faces camera in medium close-up, lit by a projection behind him showing three columns — Access, Transition, Finance — with a dot grid, a rising line and a donut chart showing 80% of public finance is debt."><div class="slate"><span class="tag time">SC 7</span><span class="tag live">Live · to camera</span><span class="tag">Projection: the offer</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who live">Live · to camera, direct</span>That is UNDP's Sustainable Energy for Development offer. We work with governments to make their energy plans investable. We de-risk finance, so capital moves to where it is needed. And we connect energy to what it is for: health, learning, jobs, food — and a stable climate.</p>
+      <p class="dir">The first and only time he looks into the lens. He is standing inside the projection beam, so the offer is literally on him; his shadow falls on the wall.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Medium close-up, slightly off-centre left so the Transition column frames his head and the Finance column stays readable on the right. Slow push-in over the whole line. This is the scene to record last on the day, when the space is quietest.</p></div>
+      <div><h3>Projection</h3><p>The three pillars of the Hub's work — Access, Transition, Finance — as three tall panels with a thin white flow linking them, in the film's three colours (teal, amber, UNDP blue). Riad's shadow on the wall is a feature, not a problem: it proves the light is real.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>Access: a dot grid fills as he says "governments". Transition: a line climbs as he says "de-risk". Finance: a donut showing today's public energy finance to developing countries — <b style="color:var(--blue)">80% debt</b>, 13% grants, 5% guarantees, 2% equity — then rotates as the guarantee and equity slices grow, to show what de-risking changes. Optional final beat: the words health · learning · jobs · food · climate light up one by one along the bottom.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic medium close-up, 2.39:1. A man in a dark suit faces the camera directly, standing inside the beam of a projector so a large projected infographic covers both him and the concrete wall behind him: three tall rectangular panels labelled ACCESS (teal), TRANSITION (amber) and FINANCE (blue) with a dot grid, a rising line and a donut chart. His shadow falls sharply on the wall. Warm rim light on one side of his face, dark brutalist interior, film grain, shallow depth of field.</pre></details>
+</section>
+
+<section class="scene" id="s8">
+  <div class="eyebrow"><span class="n">8</span><span class="t">Convergence · <b>1:45–2:00</b> · High wide, slow 180° orbit, then end card</span></div>
+  <h2>The final room: every scene at once, surrounding him.</h2>
+  <div class="frame"><img src="frames/08_convergence.jpg" alt="Storyboard frame: a high wide view of a concrete room whose three walls carry different projections — a teal clinic, an amber classroom, a green solar-irrigated farm, and a blue city at night — with Riad standing in the centre."><div class="slate"><span class="tag time">SC 8</span><span class="tag live">Live → Studio</span><span class="tag">Projection: all walls</span></div></div>
+  <div class="body">
+    <div class="vo">
+      <p><span class="who live">Live · turning slowly, quiet</span>Energy is not the goal. It is the means. Reliable, sustainable, affordable energy — so development can get on with everything else.</p>
+      <p><span class="who studio">Studio · over the end card</span>This is energy for development. Let's finish the job.</p>
+      <p class="dir">He turns once, taking it in. The camera orbits the other way. Sound from all four scenes overlaps — a clinic, a classroom, a pump, a street — then drops to silence for the end card.</p>
+    </div>
+    <div class="notes">
+      <div><h3>Framing</h3><p>Crane or jib, high and wide, a slow half-orbit so each wall passes behind Riad in turn. The frame is the only one in the film with colour on every surface. End on a still frame with the UNDP Sustainable Energy Hub mark over black.</p></div>
+      <div><h3>Projection</h3><p>Four projectors, one per surface: a clinic at night (teal-white), a classroom (amber), a solar-irrigated field (green-gold), and a city street lit after dark (blue-amber). Ideally each is footage from a UNDP programme country; the scene 2 family can reappear here, now with the lights on.</p></div>
+      <div class="dv"><h3>Data-viz animation</h3><p>One quiet line of type travels around the room at head height, linking the walls: <span class="mono" style="color:var(--ink)">384 initiatives · 128 countries · Solar for Health in 15 countries · Africa Minigrids in 21</span>. Confirm current portfolio figures with the Hub before lock.</p></div>
+    </div>
+  </div>
+  <details><summary>Image-generator prompt</summary><pre>Cinematic high wide shot from a crane, 2.39:1. A man in a dark suit stands alone in the centre of a large concrete room. Each wall carries a different life-size projected scene: a night-time rural clinic in cool teal light, a classroom of children in warm amber light, a solar-pumped irrigated field in green and gold, a city street glowing at night in blue and amber. Coloured light from every wall spills across the concrete floor and meets at his feet. Brutalist architecture, deep shadows in the corners, film grain, anamorphic.</pre></details>
+</section>
+
+<section id="data">
+  <div class="eyebrow"><span class="t">Wall data · <b>sources for every projected figure</b></span></div>
+  <h2>Every number on a wall has a source.</h2>
+  <div class="tbl"><table>
+    <tr><th>Figure</th><th>Where it appears</th><th>Source</th></tr>
+    <tr><td><b>655 million</b> people without electricity</td><td>Scenes 3, 4</td><td>Tracking SDG7: The Energy Progress Report 2026 (2024 data)</td></tr>
+    <tr><td><b>2 billion</b> using polluting cooking fuels</td><td>Scene 3 ticker</td><td>Tracking SDG7 2026</td></tr>
+    <tr><td><b>560 million</b> without electricity in sub-Saharan Africa</td><td>Scene 3 VO ("most of them")</td><td>Tracking SDG7 2026</td></tr>
+    <tr><td>Electrification pace must <b>triple</b> for universal access by 2030</td><td>Scene 6</td><td>Tracking SDG7 2026</td></tr>
+    <tr><td><b>33.6 W</b> vs <b>1,224 W</b> renewable capacity per person, low- vs high-income countries</td><td>Scene 6</td><td>Tracking SDG7 2026</td></tr>
+    <tr><td>Public energy finance to developing countries: <b>80%</b> debt, 13% grants, 5% guarantees, 2% equity ($24.6bn, 2024)</td><td>Scene 7</td><td>Tracking SDG7 2026</td></tr>
+    <tr><td>Access · Transition · Finance pillars; DREI de-risking; Africa Minigrids (21 countries); Solar for Health (15 countries); 384 initiatives in 128 countries</td><td>Scenes 7, 8</td><td>UNDP Sustainable Energy Hub — undp.org/energy (confirm current figures with the Hub)</td></tr>
+  </table></div>
+  <p class="prose" style="margin-top:16px">Figures are rounded for the walls; the VO uses the precise ones. The 2026 report's 655 million is for 2024 — if the film locks after the 2027 report, swap both the digits and the animation timing in scenes 3 and 4.</p>
+</section>
+
+<section id="production">
+  <div class="eyebrow"><span class="t">Production notes</span></div>
+  <h2>How it gets made.</h2>
+  <div class="cols">
+    <div><h3>Location</h3><p>A raw concrete space with a long corridor, at least one doorway, free-standing pillars, a corner, and a room with three clean walls: an unfinished car park, a decommissioned power station or substation (thematically ideal), or a brutalist civic building after hours. Blackout is essential — all light in the film is projected or from the entrance.</p></div>
+    <div><h3>Projection</h3><p>Four to five 10–20k-lumen laser projectors, mapped with disguise or Resolume; scene 3's wall needs a scrolling plate keyed to a tracking marker on the dolly so the horizon stays level with Riad's shoulder. Concrete texture is a feature: light the walls to 10–15% so the surface reads.</p></div>
+    <div><h3>Recording Riad</h3><p>Live lines (scenes 1, 2, 5, 7, 8) use a lav plus a boom for room tone, recorded in the space so the acoustics match the picture. Studio lines (3, 4, 6, end card) are recorded afterwards, close-mic'd, against a locked cut so the data animations hit on the words. Scene 7 to camera is shot last, with the most takes.</p></div>
+  </div>
+  <div class="cols">
+    <div><h3>Camera</h3><p>Full-frame cinema camera, anamorphic 2× set, 2.39:1. One continuous-feeling passage: three moves stitched at the corner (scene 5) and the doorway (scene 2) with hidden cuts. Slow, deliberate — the projections supply the motion.</p></div>
+    <div><h3>Animation</h3><p>Data visualisations built in After Effects at projector resolution from the source spreadsheet, so a figure can be swapped without re-animating. Style: teal for the problem, amber for the response, UNDP blue for finance; one typeface family throughout.</p></div>
+    <div><h3>Deliverables</h3><p>2:00 hero film (2.39:1 + 16:9 crop), 60s and 30s cut-downs, eight stills for print, and the projection plates as standalone assets for events — the walls were designed to work on their own.</p></div>
+  </div>
+  <p class="mono" style="margin-top:36px">Storyboard frames are illustrated placeholders. Each scene includes a prompt for generating photoreal versions; the frames' compositions, colours and projection placements are the brief for those.</p>
+</section>
+</div>
+</body>
+</html>
