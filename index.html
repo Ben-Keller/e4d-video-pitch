@@ -62,6 +62,23 @@ h3{font-size:14px;font-family:var(--mono);font-weight:500;letter-spacing:.12em;t
 .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:18px}
 .cols>div p{margin:0;color:var(--ink-2);font-size:15.5px}
 
+/* concept */
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.rules .rule{border-top:2px solid var(--ac);background:var(--ground-2);border-inline:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:3px;padding:20px}
+.rules .rule .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:8px}
+.rules .rule h3{color:var(--ink);margin-bottom:8px;font-size:15px;letter-spacing:.02em;text-transform:none;font-family:var(--display);font-weight:600}
+.rules .rule p{margin:0;color:var(--ink-2);font-size:15px}
+@media(max-width:820px){.rules{grid-template-columns:1fr}}
+
+/* production plan cards */
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.plan .card{background:var(--ground-2);border:1px solid var(--line);border-top:2px solid var(--ac);border-radius:3px;padding:22px 20px}
+.plan .card h3{display:flex;align-items:center;gap:10px;color:var(--ac);margin-bottom:12px}
+.plan .card h3 svg{width:20px;height:20px;flex:none;stroke:var(--ac);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.plan .card p{margin:0;color:var(--ink-2);font-size:15.5px}
+@media(max-width:980px){.plan{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:660px){.plan{grid-template-columns:1fr}}
+
 /* scene slide */
 .scene .frame{position:relative;background:#000;border:1px solid var(--line)}
 .scene .frame img{width:100%;display:block;aspect-ratio:16/9}
@@ -127,7 +144,7 @@ td b{color:var(--ink);font-family:var(--display);font-stretch:85%;font-weight:70
 <nav><div class="wrap">
 <a href="#concept">Concept</a><a href="#script">Script</a>
 <a class="sc" href="#s1">1 Threshold</a><a class="sc" href="#s2">2 Doorway</a><a class="sc" href="#s3">3 Corridor</a><a class="sc" href="#s4">4 Pillars</a><a class="sc" href="#s5">5 Workshop</a><a class="sc" href="#s6">6 The Wall</a><a class="sc" href="#s7">7 The Offer</a><a class="sc" href="#s8">8 Convergence</a>
-<a href="#production">Production</a>
+<a href="#production">Production plan</a>
 </div></nav>
 
 <div class="wrap">
@@ -137,8 +154,7 @@ td b{color:var(--ink);font-family:var(--display);font-stretch:85%;font-weight:70
     <h1>Energy for<br><em>Development</em></h1>
   </div>
   <div>
-    <p>A ~2-minute walk-through film. Riad Meddeb moves through a dark concrete building; projections appear on its architecture and turn the Sustainable Energy for Development narrative into rooms you can walk into. His voice carries the story — recorded live in the space where he speaks to camera, finished in the studio where the walls speak for him.</p>
-    <dl class="meta" style="margin-top:22px">
+    <dl class="meta">
       <dt>Runtime</dt><dd>2:00 (8 scenes)</dd>
       <dt>Narrator</dt><dd>Riad Meddeb, on location + studio VO</dd>
       <dt>Format</dt><dd>2.39:1, single continuous passage, projection-mapped</dd>
@@ -155,6 +171,12 @@ td b{color:var(--ink);font-family:var(--display);font-stretch:85%;font-weight:70
   <div class="eyebrow"><span class="t">Concept</span></div>
   <div class="prose prose-2col">
     <p>Development without energy is a building with the lights off. So we start there: bare concrete, no colour, one man walking. As he moves, the walls begin to show what reliable energy makes possible — first small (a doorway), then moving (a corridor), then monumental (a whole wall). The projections escalate in scale exactly as the narrative escalates from a single household to a continent-wide system, and the final room brings every scene together around him.</p>
+    <p>The building is the argument; Riad's passage through it is the sentence. The camera never cuts away from his walk — the film is one continuous passage, each scene revealed by turning a corner, so the audience discovers the story at the same pace he does.</p>
+  </div>
+  <div class="rules">
+    <div class="rule" style="--ac:var(--amber)"><span class="k">Projection · three scales</span><h3>Intimate, moving, vast</h3><p>A doorway at human size, then a landscape travelling along a corridor at walking pace, then a single image filling an entire wall. Every projection is anchored to real architecture — door frames, pillars, corners — so the image reads as light on concrete, never as a green-screen.</p></div>
+    <div class="rule" style="--ac:#ff8f7a"><span class="k">Voice · two registers</span><h3>Witnessed and considered</h3><p><span style="color:#ff8f7a">Live</span> lines are recorded on location with the room's own acoustics: Riad at a doorway, turning a corner, speaking to camera. <span style="color:var(--teal)">Studio</span> lines are the close, intimate voice that carries the data sequences while the walls do the talking.</p></div>
+    <div class="rule" style="--ac:var(--teal)"><span class="k">Data · living, not decorative</span><h3>A figure is never left as a figure</h3><p>Four data moments are animated into the projections: a counter along the corridor, a wall-sized number dissolving into the people it counts, a map of Africa lighting up node by node, and the offer's three pillars with a finance mix that shifts as Riad speaks.</p></div>
   </div>
 </section>
 
@@ -324,17 +346,15 @@ td b{color:var(--ink);font-family:var(--display);font-stretch:85%;font-weight:70
 </section>
 
 <section id="production">
-  <div class="eyebrow"><span class="t">Production notes</span></div>
+  <div class="eyebrow"><span class="t">Production plan</span></div>
   <h2>How it gets made.</h2>
-  <div class="cols">
-    <div><h3>Location</h3><p>A raw concrete space with a long corridor, at least one doorway, free-standing pillars, a corner, and a room with three clean walls: an unfinished car park, a decommissioned power station or substation (thematically ideal), or a brutalist civic building after hours. Blackout is essential — all light in the film is projected or from the entrance.</p></div>
-    <div><h3>Projection</h3><p>Four to five 10–20k-lumen laser projectors, mapped with disguise or Resolume; scene 3's wall needs a scrolling plate keyed to a tracking marker on the dolly so the horizon stays level with Riad's shoulder. Concrete texture is a feature: light the walls to 10–15% so the surface reads.</p></div>
-    <div><h3>Recording Riad</h3><p>Live lines (scenes 1, 2, 5, 7, 8) use a lav plus a boom for room tone, recorded in the space so the acoustics match the picture. Studio lines (3, 4, 6, end card) are recorded afterwards, close-mic'd, against a locked cut so the data animations hit on the words. Scene 7 to camera is shot last, with the most takes.</p></div>
-  </div>
-  <div class="cols">
-    <div><h3>Camera</h3><p>Full-frame cinema camera, anamorphic 2× set, 2.39:1. One continuous-feeling passage: three moves stitched at the corner (scene 5) and the doorway (scene 2) with hidden cuts. Slow, deliberate — the projections supply the motion.</p></div>
-    <div><h3>Animation</h3><p>Data visualisations built in After Effects at projector resolution from the source spreadsheet, so a figure can be swapped without re-animating. Style: teal for the problem, amber for the response, UNDP blue for finance; one typeface family throughout.</p></div>
-    <div><h3>Deliverables</h3><p>2:00 hero film (2.39:1 + 16:9 crop), 60s and 30s cut-downs, eight stills for print, and the projection plates as standalone assets for events — the walls were designed to work on their own.</p></div>
+  <div class="plan">
+    <div class="card" style="--ac:var(--amber)"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20V8l7-4 7 4v12"/><path d="M10 20v-6h4v6"/></svg>Location</h3><p>A raw concrete space with a long corridor, at least one doorway, free-standing pillars, a corner, and a room with three clean walls: an unfinished car park, a decommissioned power station or substation (thematically ideal), or a brutalist civic building after hours. Blackout is essential — all light in the film is projected or from the entrance.</p></div>
+    <div class="card" style="--ac:var(--teal)"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="7" width="13" height="10" rx="2"/><circle cx="9" cy="12" r="2.6"/><path d="M15.5 10.5l6-3.5v10l-6-3.5z"/></svg>Projection</h3><p>Four to five 10–20k-lumen laser projectors, mapped with disguise or Resolume; scene 3's wall needs a scrolling plate keyed to a tracking marker on the dolly so the horizon stays level with Riad's shoulder. Concrete texture is a feature: light the walls to 10–15% so the surface reads.</p></div>
+    <div class="card" style="--ac:#ff8f7a"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21"/><path d="M9 21h6"/></svg>Recording Riad</h3><p>Live lines (scenes 1, 2, 5, 7, 8) use a lav plus a boom for room tone, recorded in the space so the acoustics match the picture. Studio lines (3, 4, 6, end card) are recorded afterwards, close-mic'd, against a locked cut so the data animations hit on the words. Scene 7 to camera is shot last, with the most takes.</p></div>
+    <div class="card" style="--ac:var(--blue)"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7.5h12v9h-12z" /><path d="M14.5 12l7-3.5v7z"/><circle cx="6" cy="5" r="2"/><circle cx="11" cy="5" r="2"/></svg>Camera</h3><p>Full-frame cinema camera, anamorphic 2× set, 2.39:1. One continuous-feeling passage: three moves stitched at the corner (scene 5) and the doorway (scene 2) with hidden cuts. Slow, deliberate — the projections supply the motion.</p></div>
+    <div class="card" style="--ac:#9b8cf0"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V9"/><path d="M8.5 18V5"/><path d="M14 18v-7"/><path d="M19.5 18V7"/><path d="M2 21h20"/></svg>Animation</h3><p>Data visualisations built in After Effects at projector resolution from the source spreadsheet, so a figure can be swapped without re-animating. Style: teal for the problem, amber for the response, UNDP blue for finance; one typeface family throughout.</p></div>
+    <div class="card" style="--ac:#7ed07a"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11"/><path d="M8 10.5l4 3.5 4-3.5"/><path d="M4 16v3.5h16V16"/></svg>Deliverables</h3><p>2:00 hero film (2.39:1 + 16:9 crop), 60s and 30s cut-downs, eight stills for print, and the projection plates as standalone assets for events — the walls were designed to work on their own.</p></div>
   </div>
 </section>
 </div>
